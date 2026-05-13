@@ -111,6 +111,9 @@ export default function Projects() {
                                         whileHover={{ scale: 1.05 }}
                                         whileTap={{ scale: 0.95 }}
                                         href={project.github}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+
                                         className="flex items-center gap-2 px-5 py-3 rounded-full bg-[#222] text-white hover:bg-green-400 hover:text-black transition"
                                     >
                                         <FaGithub />
@@ -121,6 +124,8 @@ export default function Projects() {
                                         whileHover={{ scale: 1.05 }}
                                         whileTap={{ scale: 0.95 }}
                                         href={project.url}
+                                         target="_blank"
+                                         rel="noopener noreferrer"
                                         className="flex items-center gap-2 px-5 py-3 rounded-full border border-green-400 text-green-400 hover:bg-green-400 hover:text-black transition"
                                     >
                                         <FaExternalLinkAlt />
