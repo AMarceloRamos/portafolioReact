@@ -86,34 +86,41 @@ export default function Contact() {
             [name]: value,
         }));
     };
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
 
-    // 👉 enviar formulario
-    const handleSubmit = async (e: React.FormEvent) => {
-        e.preventDefault();
-        setLoading(true);
-        setSuccess("");
+  setLoading(true);
+  setSuccess("");
 
-        try {
-            const res = await fetch("http://localhost:4000/api/contact", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(form),
-            });
+  try {
+    const res = await fetch(
+      `${import.meta.env.VITE_API_URL}/contact`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(form),
+      }
+    );
 
-            if (res.ok) {
-                setSuccess("Mensaje enviado correctamente ✅");
-                setForm({ name: "", email: "", message: "" });
-            } else {
-                setSuccess("Error al enviar ❌");
-            }
-        } catch (error) {
-            setSuccess("Error del servidor ❌");
-        }
+    if (res.ok) {
+      setSuccess("Mensaje enviado correctamente ✅");
 
-        setLoading(false);
+      setForm({
+        name: "",
+        email: "",
+        message: "",
+      });
+    } else {
+      setSuccess("Error al enviar ❌");
     }
+  } catch (error) {
+    setSuccess("Error del servidor ❌");
+  }
+
+  setLoading(false);
+};
         return (
             <section
                 id="contact"
