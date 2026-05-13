@@ -15,7 +15,7 @@ const app = express();
 // 🔧 middlewares
 app.use(
   cors({
-    origin: "https://tu-frontend.vercel.app",
+    origin: "https://portfolioadriandeveloper.vercel.app",
     credentials: true,
   })
 );
