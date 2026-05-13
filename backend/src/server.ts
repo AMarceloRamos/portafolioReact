@@ -13,7 +13,12 @@ dotenv.config();
 const app = express();
 
 // 🔧 middlewares
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://tu-frontend.vercel.app",
+    credentials: true,
+  })
+);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
