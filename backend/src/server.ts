@@ -30,19 +30,24 @@ app.use("/api/contact", contactRouter);
 
 
 // 🔌 conexión a Mongo
-const connectDB = async () => {
+const connectDB = async (): Promise<void> => {
   try {
-    if (!process.env.MONGO_URI) {
-      throw new Error("MONGO_URI no definida en .env");
+    const mongoURI = process.env.MONGODB_URI;
+
+    if (!mongoURI) {
+      throw new Error("❌ MONGODB_URI no está definida");
     }
 
-    await mongoose.connect(process.env.MONGO_URI);
-    console.log("✅ Mongo conectado");
+    await mongoose.connect(mongoURI);
+
+    console.log("✅ MongoDB conectado correctamente");
   } catch (error) {
-    console.error("❌ Error Mongo:", error);
+    console.error("❌ Error conectando MongoDB:", error);
+
     process.exit(1);
   }
 };
+
 
 // 🚀 iniciar servidor
 const PORT = process.env.PORT || 4000;
