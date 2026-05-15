@@ -58,6 +58,7 @@ export default function Hero() {
                         Contact 
                         </a>
                     </button>
+                   
                 </div>
             </motion.div>
         </section>
