@@ -1,6 +1,5 @@
 import axios from "axios";
 
-import axios from "axios";
 
 export const API = axios.create({
   baseURL: "https://portafolioreact-ejat.onrender.com/api",
