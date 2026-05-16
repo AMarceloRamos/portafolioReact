@@ -79,42 +79,19 @@ export default function Footer() {
             </ul>
           </motion.div>
 
-          {/* SOCIAL */}
-          {/* <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
-            viewport={{ once: true }}
-          >
+        
             <h3 className="text-white font-bold text-xl mb-4">
-              Connect
+              Servicios
             </h3>
 
             <div className="flex gap-4 flex-wrap">
-              {socialLinks.map((social) => {
-                const Icon = social.icon;
-
-                return (
-                  <motion.a
-                    key={social.label}
-                    href={social.href}
-                    whileHover={{
-                      scale: 1.15,
-                      y: -5,
-                    }}
-                    whileTap={{ scale: 0.95 }}
-                    className="w-12 h-12 rounded-full bg-[#1a1a1a] border border-white/10 flex items-center justify-center text-gray-300 hover:bg-green-400 hover:text-black hover:border-green-400 transition"
-                  >
-                    <Icon size={18} />
-                  </motion.a>
-                );
-              })}
+             
             </div>
 
             <p className="text-gray-500 mt-6 text-sm">
               Available for freelance projects and collaborations.
             </p>
-          </motion.div> */}
+         
         </div>
       </div>
 

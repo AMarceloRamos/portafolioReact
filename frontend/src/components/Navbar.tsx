@@ -152,7 +152,7 @@ export default function Navbar() {
 
         .glitch-effect::after {
           left: -2px;
-          text-shadow: -2px 0 #00ffff;
+          text-shadow: -2px 0 #07ecc6;
           clip: rect(85px, 550px, 140px, 0);
           animation: glitch-anim 2s infinite linear alternate-reverse;
         }
@@ -221,7 +221,7 @@ export default function Navbar() {
       `}</style>
 
       {/* NAVBAR */}
-      <nav className="sticky top-0 z-50 bg-animated cyber-grid backdrop-blur-xl border-b border-cyan-400/10">
+      <nav className=" bg-animated cyber-grid backdrop-blur-xl border-b border-cyan-400/10">
         <div className="flex justify-between items-center px-6 py-4">
           {/* LOGO */}
           <motion.div
@@ -237,7 +237,7 @@ export default function Navbar() {
             />
 
             <h1
-              className="text-3xl md:text-4xl font-black tracking-[0.2em] neon-text glitch-effect uppercase"
+              className="border-green-400/50 text-3xl md:text-4xl font-black tracking-[0.2em] neon-text glitch-effect uppercase"
               data-text="Portafolio"
             >
               Portafolio
@@ -259,7 +259,7 @@ export default function Navbar() {
 
             <a
               href="/services"
-              className="cyber-button relative px-5 py-2 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold shadow-[0_0_20px_rgba(0,255,255,0.4)] hover:scale-105 transition"
+              className="cyber-button relative px-5 py-2 rounded-lg bg-gradient-to-r from-green-500 to-green-600 text-white font-semibold shadow-[0_0_20px_rgba(0,255,255,0.4)] hover:scale-105 transition"
             >
               Servicios
             </a>
