@@ -11,3 +11,6 @@ backend/uploads/
 # General
 .DS_Store
 *.log
+backend/src/server.ts
+frontend/src/services/api.ts
+backend/package.json
