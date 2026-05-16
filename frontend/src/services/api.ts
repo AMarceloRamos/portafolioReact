@@ -1,7 +1,10 @@
 import axios from "axios";
 
+import axios from "axios";
+
 export const API = axios.create({
-  baseURL: "http://localhost:4000/api",
+  baseURL: "https://portafolioreact-ejat.onrender.com/api",
+  withCredentials: true,
 });
 
 API.interceptors.request.use((config) => {
