@@ -226,7 +226,7 @@ export default function CyberpunkNavbar() {
       `}</style>
 
       <div className="min-h-screen bg-black text-white">
-        <nav className="bg-animated cyber-grid fixed top-0 left-0 w-full z-50 backdrop-blur-md border-b border-cyan-500/20">
+        <nav className="fixed top-0 left-0 w-full z-50 bg-animated cyber-grid backdrop-blur-md border-b border-cyan-500/20">
           <div className="container mx-auto px-4">
             <div className="flex justify-between items-center py-4">
               <a
