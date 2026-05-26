@@ -100,7 +100,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row gap-4 justify-between items-center">
           
           <p className="text-gray-500 text-sm text-center md:text-left">
-            © {new Date().getFullYear()} Adrián Ramos. All rights reserved.
+            © {new Date().getFullYear()}Desarrollado por Adrián Ramos. All rights reserved.
           </p>
 
           <div className="flex gap-6 text-sm">
