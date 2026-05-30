@@ -44,7 +44,7 @@ export default function Hero() {
                             <h3 className="text-green-400 font-bold mb-2">Backend</h3>
 
                             <p className="text-gray-400 text-sm leading-relaxed">
-                                Node.js, Express, PHP MVC, PostgreSQL y MySQL
+                                Node.js, Express, NestJs, ,PHP, PostgreSQL, MySQL, MongoDb
                             </p>
                         </div>
 
