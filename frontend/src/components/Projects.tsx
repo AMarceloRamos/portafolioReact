@@ -42,7 +42,7 @@ export default function Projects() {
         <>
             {/* LOADING */}
             {loading && (
-                <div className="flex justify-center items-center py-40">
+                <div className="flex justify-center items-center py-10">
                     <div className="w-16 h-16 border-4 border-[#8176AF] border-t-transparent rounded-full animate-spin" />
                 </div>
             )}
